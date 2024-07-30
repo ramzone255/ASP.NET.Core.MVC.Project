@@ -11,7 +11,7 @@ namespace RunGroopWebApp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Addresss",
+                name: "Address",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -141,7 +141,7 @@ namespace RunGroopWebApp.Migrations
                 name: "AppUser");
 
             migrationBuilder.DropTable(
-                name: "Addresss");
+                name: "Address");
         }
     }
 }

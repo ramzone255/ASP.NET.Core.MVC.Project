@@ -12,6 +12,6 @@ namespace RunGroopWebApp.Data
         }
         public DbSet<Race> Races { get; set; }
         public DbSet<Club> Clubs { get; set; }
-        public DbSet<Address> Addresss { get; set; }
+        public DbSet<Address> Address { get; set; }
     }
 }
