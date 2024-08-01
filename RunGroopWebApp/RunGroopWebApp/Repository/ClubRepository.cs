@@ -31,7 +31,7 @@ namespace RunGroopWebApp.Repository
 
         public async Task<Club> GetByIdAsyns(int id)
         {
-            return await _context.Clubs.FirstOrDefaultAsync(p => p.Id == id);
+            return await _context.Clubs.Include(p => p.Address).FirstOrDefaultAsync(p => p.Id == id);
         }
 
         public async Task<IEnumerable<Club>> GetClubBySity(string sity)
